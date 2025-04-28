@@ -1,0 +1,38 @@
+.story-card {
+    background: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 20px rgba(52,51,56,0.06);
+    width: 315px;
+    margin-bottom: 2rem;
+  }
+  .story-card img {
+    width: 100%;
+    aspect-ratio: 1.7/1;
+    object-fit: cover;
+  }
+  .story-head {
+    font-size: 1.09rem;
+    font-weight: 700;
+    margin: 1rem 0 0.3rem 0;
+    color: #343338;
+    line-height: 1.27;
+  }
+  .story-meta {
+    color: #9b9fa2;
+    font-size: 0.98rem;
+    margin-bottom: 0.3rem;
+  }
+  .story-summary {
+    font-size: 1.02rem;
+    color: #62666b;
+    margin: 0 1rem 1.1rem 1rem;
+  }
+  @media (max-width: 900px) {
+    .story-card {
+      width: 100%;
+      margin-bottom: 1.2rem;
+    }
+  }

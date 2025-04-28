@@ -1,0 +1,38 @@
+.latest-sidebar {
+    background: #fafbfc;
+    border-left: 1px solid #e6e6e6;
+    padding: 1.2rem 1rem;
+  }
+  .latest-sidebar h3 {
+    font-size: 1.19rem;
+    font-weight: 900;
+    border-bottom: 2px solid #343338;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.4rem;
+    color: #343338;
+    letter-spacing: 0.03em;
+  }
+  .latest-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .latest-sidebar li {
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .latest-sidebar a {
+    color: #343338;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.02rem;
+    flex: 1;
+  }
+  .lat-time {
+    color: #9b9fa2;
+    font-size: 0.99rem;
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }

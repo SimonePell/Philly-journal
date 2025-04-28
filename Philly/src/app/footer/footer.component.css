@@ -1,0 +1,33 @@
+.inq-footer {
+  background: #f8f8f8;
+  border-top: 2px solid #e6e6e6;
+  margin-top: 3rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.96rem;
+}
+.inq-footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.3rem 1rem 1rem 1rem;
+}
+.inq-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  line-height: 2.1rem;
+}
+.inq-footer-links a {
+  color: #343338;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.inq-footer-btm {
+  text-align: center;
+  color: #9b9fa2;
+  border-top: 1px solid #e6e6e6;
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+}
+.inq-footer-btm a {
+  color: #9b9fa2;
+}

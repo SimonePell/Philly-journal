@@ -1,0 +1,40 @@
+.dense-story-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .dense-story-list li {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.7rem 0;
+  }
+  
+  .dense-story-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .dense-story-list a {
+    display: block;
+    text-decoration: none;
+    color: #343338;
+  }
+  
+  .dense-title {
+    font-size: 1.01rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+    line-height: 1.23;
+  }
+  
+  .dense-meta {
+    color: #9b9fa2;
+    font-size: 0.97rem;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 800px) {
+    .dense-title {
+      font-size: 1rem;
+    }
+  }
