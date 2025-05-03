@@ -1,0 +1,23 @@
+.inq-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fbfafa;
+  padding-bottom: 2rem;
+}
+
+.inq-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 900px) {
+  .inq-main-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

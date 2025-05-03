@@ -1,17 +1,29 @@
 import { Component, HostListener } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isScrolled = false;
+  isShrunk = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 50;
+    const scrollTop = window.scrollY;
+  
+    if (!this.isShrunk && scrollTop > 60) {
+      this.isShrunk = true;
+    } else if (this.isShrunk && scrollTop < 40) {
+      this.isShrunk = false;
+    }
+  
+    const header = document.querySelector('.app-bar');
+    if (header) {
+      header.classList.toggle('shrink', this.isShrunk);
+    }
   }
 }

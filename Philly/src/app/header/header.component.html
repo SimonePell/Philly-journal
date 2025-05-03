@@ -1,54 +1,62 @@
-<header class="inq-header" [class.inq-header-scrolled]="isScrolled">
-  <!-- Top line with date and quick links -->
-  <div class="inq-header-row inq-header-top">
-    <div class="inq-header-left">
-      <div class="inq-hamburger">
-        ☰
+<header class="app-bar" [class.shrink]="isShrunk">
+  <nav class="global-app-bar">
+    <div class="app-bar-wrapper">
+
+      <div class="main-header">
+        <!-- Left block -->
+        <div class="left-block" *ngIf="!isShrunk">
+          <div class="date-text">Saturday, May 3, 2025</div>
+          <div class="links">
+            <a href="#">Today's Paper</a>
+            <span class="divider">|</span>
+            <a href="#">Newsletters</a>
+          </div>
+        </div>
+
+        <!-- Shrink icons -->
+        <div class="left-block shrink-icons" *ngIf="isShrunk">
+          <button class="hamburger-btn">☰</button>
+          <button class="search-btn">🔍</button>
+        </div>
+
+        <!-- Center logo -->
+        <div class="header-logo">
+          <a href="/"><img src="https://placehold.co/200x60?text=LOGO" alt="Logo" /></a>
+        </div>
+
+        <!-- Auth section -->
+        <div class="auth-section">
+          <a href="#" class="signin-btn">SIGN IN</a>
+          <button class="subscribe-btn">
+            <b>SUBSCRIBE</b>
+            <div class="offer">€1 PER 6 MESI</div>
+          </button>
+        </div>
       </div>
-      <div class="inq-header-date-links">
-        <span class="inq-date">Sunday, April 27, 2025</span>
-        <span class="inq-divider">|</span>
-        <a href="#" class="inq-seclink"><b>Today's Paper</b></a>
-        <span class="inq-divider">|</span>
-        <a href="#" class="inq-seclink"><b>Newsletters</b></a>
+
+      <!-- Nav links -->
+      <div class="bottom-row" *ngIf="!isShrunk">
+        <div class="mainnav-icons">
+          <button class="hamburger-btn">☰</button>
+          <button class="search-btn">🔍</button>
+        </div>
+        <div class="mainnav-links">
+          <a href="#">NEWS</a>
+          <a href="#">SPORTS</a>
+          <a href="#">BUSINESS</a>
+          <a href="#">OPINION</a>
+          <a href="#">POLITICS</a>
+          <a href="#">ENTERTAINMENT</a>
+          <a href="#">LIFE</a>
+          <a href="#">FOOD</a>
+          <a href="#">HEALTH</a>
+          <a href="#">REAL ESTATE</a>
+          <a href="#">PHILLY FIRST</a>
+          <a href="#">OBITUARIES</a>
+          <a href="#">JOBS</a>
+        </div>
       </div>
+
     </div>
-    <div class="inq-header-actions">
-      <a href="#" class="inq-signin">SIGN IN</a>
-      <button class="inq-subscribe">SUBSCRIBE<br><span class="inq-offer">$1 for 6 months</span></button>
-      <div class="inq-search">
-        🔍
-      </div>
-    </div>
-  </div>
-
-  <!-- Centered logo -->
-  <div class="inq-header-row inq-header-logo">
-    <img src="https://ext.same-assets.com/1262791071/2563901416.svg" alt="The Philadelphia Inquirer" class="inq-logo" />
-  </div>
-
-  <!-- Navigation bar -->
-  <nav class="inq-mainnav">
-    <a href="#" class="inq-icon-link">
-      ☰
-    </a>
-  
-    <!-- Icona Search -->
-    <a href="#" class="inq-icon-link">
-      🔍
-    </a>
-
-    <a href="#" class="inq-navlink">NEWS</a>
-    <a href="#" class="inq-navlink">SPORTS</a>
-    <a href="#" class="inq-navlink">BUSINESS</a>
-    <a href="#" class="inq-navlink">OPINION</a>
-    <a href="#" class="inq-navlink">POLITICS</a>
-    <a href="#" class="inq-navlink">ENTERTAINMENT</a>
-    <a href="#" class="inq-navlink">LIFE</a>
-    <a href="#" class="inq-navlink">FOOD</a>
-    <a href="#" class="inq-navlink">HEALTH</a>
-    <a href="#" class="inq-navlink">REAL ESTATE</a>
-    <a href="#" class="inq-navlink">PHILLY FIRST</a>
-    <a href="#" class="inq-navlink">OBITUARIES</a>
   </nav>
 </header>
