@@ -1,0 +1,74 @@
+.subscribers-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 1rem 0;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .section-header a {
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url('/assets/rightArrow.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 1.5rem;
+    color: black;
+  }
+  
+  .subscribers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .card--large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 0.75rem 0;
+  }
+  
+  .card-content h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .author {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  

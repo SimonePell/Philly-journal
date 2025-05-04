@@ -3,6 +3,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
 import { ReadsComponent } from './reads/reads.component'; 
+import { SubscribersComponent } from './subscribers/subscribers.component';
 
 
 @Component({
@@ -13,6 +14,7 @@ import { ReadsComponent } from './reads/reads.component';
     FooterComponent,
     NewsComponent,
     ReadsComponent,
+    SubscribersComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
