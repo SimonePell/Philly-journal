@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { DenseStoryListComponent } from './dense-story-list/dense-story-list.component';
-import { LatestSidebarComponent } from './latest-sidebar/latest-sidebar.component';
-import { MainSectionsComponent } from './main-sections/main-sections.component';
-import { NewsletterBarComponent } from './newsletter-bar/newsletter-bar.component';
-import { SectionHeaderComponent } from './section-header/section-header.component';
-import { StoryBlockComponent } from './story-block/story-block.component';
-import { StoryCardComponent } from './story-card/story-card.component';
+import { NewsComponent } from './news/news.component';
+
 
 @Component({
   selector: 'app-root',
@@ -15,12 +10,7 @@ import { StoryCardComponent } from './story-card/story-card.component';
   imports: [
     HeaderComponent,
     FooterComponent,
-    DenseStoryListComponent,
-    LatestSidebarComponent,
-    NewsletterBarComponent,
-    SectionHeaderComponent,
-    StoryBlockComponent,
-    StoryCardComponent
+    NewsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -1,54 +1,9 @@
-<!-- src/app/app.component.html -->
-<app-header></app-header>
+<div class="head-container">
+  <app-header></app-header>
+</div>
 
-<main class="inq-main">
-
-  <!-- Main Grid: Lead story + The Latest sidebar -->
-  <section class="inq-main-grid">
-    <div class="main-stories-block">
-      <app-story-block></app-story-block>
-    </div>
-    <div class="sidebar-block">
-      <app-latest-sidebar></app-latest-sidebar>
-    </div>
-  </section>
-
-  <!-- Section: NFL Draft -->
-  <app-section-header title="NFL Draft"></app-section-header>
-  <div class="main-section-content">
-    <app-story-card></app-story-card>
-    <app-dense-story-list></app-dense-story-list>
-  </div>
-
-  <!-- Section: The Region -->
-  <app-section-header title="The Region"></app-section-header>
-  <div class="main-section-content">
-    <app-story-card></app-story-card>
-    <app-story-card></app-story-card>
-    <app-story-card></app-story-card>
-    <app-dense-story-list></app-dense-story-list>
-  </div>
-
-  <!-- Section: Sports -->
-  <app-section-header title="Sports"></app-section-header>
-  <div class="main-section-content">
-    <app-story-card></app-story-card>
-    <app-story-card></app-story-card>
-    <app-dense-story-list></app-dense-story-list>
-  </div>
-
-  <!-- Section: Inquirer Newsletters promo -->
-  <app-newsletter-bar></app-newsletter-bar>
-
-  <!-- Section: Real Estate -->
-  <app-section-header title="Real Estate"></app-section-header>
-  <div class="main-section-content">
-    <app-story-card></app-story-card>
-    <app-dense-story-list></app-dense-story-list>
-  </div>
-
-  <!-- Add additional sections as desired using this pattern -->
-
-</main>
+<div class="page-container">
+  <app-news></app-news>
+</div>
 
 <app-footer></app-footer>
