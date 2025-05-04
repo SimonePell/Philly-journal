@@ -4,6 +4,8 @@ import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
 import { ReadsComponent } from './reads/reads.component'; 
 import { SubscribersComponent } from './subscribers/subscribers.component';
+import { SportsComponent } from './sports/sports.component';
+import { PoliticsComponent } from './politics/politics.component';
 
 
 @Component({
@@ -15,6 +17,8 @@ import { SubscribersComponent } from './subscribers/subscribers.component';
     NewsComponent,
     ReadsComponent,
     SubscribersComponent,
+    SportsComponent,
+    PoliticsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

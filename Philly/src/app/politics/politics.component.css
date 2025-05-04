@@ -1,0 +1,94 @@
+.politics-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .section-header h2 a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .more-link {
+    font-weight: bold;
+    text-decoration: none;
+    background: url('/assets/rightArrow.svg') no-repeat right center;
+    padding-right: 1.5rem;
+    color: black;
+  }
+  
+  .politics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.75rem 0 0.5rem;
+  }
+  
+  .card-content p {
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content .author {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .text-article h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .text-article .author {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .opinion-label {
+    font-size: 0.75rem;
+    color: #800;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Responsive */
+  @media screen and (min-width: 1024px) {
+    .politics-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
