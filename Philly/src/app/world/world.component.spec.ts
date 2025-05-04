@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegionComponent } from './region.component';
+import { WorldComponent } from './world.component';
 
-describe('RegionComponent', () => {
-  let component: RegionComponent;
-  let fixture: ComponentFixture<RegionComponent>;
+describe('WorldComponent', () => {
+  let component: WorldComponent;
+  let fixture: ComponentFixture<WorldComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RegionComponent]
+      imports: [WorldComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RegionComponent);
+    fixture = TestBed.createComponent(WorldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
