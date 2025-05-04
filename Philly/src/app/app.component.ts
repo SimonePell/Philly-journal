@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
+import { ReadsComponent } from './reads/reads.component'; 
 
 
 @Component({
@@ -11,6 +12,7 @@ import { NewsComponent } from './news/news.component';
     HeaderComponent,
     FooterComponent,
     NewsComponent,
+    ReadsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -1,0 +1,118 @@
+.reads-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    border-bottom: 2px solid #000;
+  }
+  
+  /* Header block */
+  .reads-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+  
+  .reads-header-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .reads-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  
+  .reads-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  .reads-header-image img {
+    width: 334px;
+    height: 223px;
+    object-fit: cover;
+  }
+  
+  /* Large main card */
+  .reads-large-card {
+    background: #f8f8f8;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    height: 739px;
+  }
+  
+  .reads-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reads-card-summary {
+    color: #444;
+  }
+  
+  /* Grid of smaller cards */
+  .reads-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  
+  .reads-small-card {
+    width: calc(50% - 0.5rem);
+    height: 151px;
+    display: flex;
+    background: #f2f2f2;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reads-small-content {
+    flex: 1;
+    padding-right: 1rem;
+  }
+  
+  .reads-small-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  .reads-small-summary {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .reads-small-img img {
+    width: 151px;
+    height: 151px;
+    object-fit: cover;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .reads-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .reads-grid {
+      flex-direction: column;
+    }
+  
+    .reads-small-card {
+      width: 100%;
+    }
+  }
+  
