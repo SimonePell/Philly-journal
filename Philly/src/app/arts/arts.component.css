@@ -1,0 +1,137 @@
+.ae-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .ae-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 1rem 1.25rem;
+    font-family: sans-serif;
+  }
+  
+  .section-header .left {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .section-header .right {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    background-image: url('/pf/resources/images/rightArrow.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .ae-grid {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+  
+  .ae-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .ae-label {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .ae-video-card img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    background: black;
+  }
+  
+  .ae-author {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .ae-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Featured article */
+  .ae-featured {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  
+  .ae-featured .image img {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+  
+  .ae-featured .text {
+    flex: 1;
+  }
+  
+  .ae-featured h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .ae-featured .author {
+    font-size: 0.95rem;
+  }
+  
+  /* Grid of 4 articles */
+  .ae-articles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .ae-article {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  
+  .ae-article .image img {
+    width: 100%;
+    max-width: 120px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  .ae-article .text {
+    flex: 1;
+  }
+  
+  .ae-article h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .ae-article .author {
+    font-size: 0.85rem;
+  }
+  

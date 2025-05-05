@@ -38,10 +38,10 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding-top : 1rem;
   }
   
   .newsletter-card {
-    background: white;
     display: flex;
     flex-direction: column;
   }
@@ -62,7 +62,6 @@
   
   .newsletter-card .author {
     font-size: 0.9rem;
-    color: #0071bc;
     padding: 0 0.75rem 1rem;
   }
   

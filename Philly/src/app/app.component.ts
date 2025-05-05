@@ -9,6 +9,8 @@ import { PoliticsComponent } from './politics/politics.component';
 import { NewslettersComponent } from './newsletters/newsletters.component';
 import { WorldComponent } from './world/world.component';
 import { HealthComponent } from './health/health.component';
+import { BusinessComponent } from './business/business.component';
+import { ArtsComponent } from './arts/arts.component';  
 
 
 @Component({
@@ -25,6 +27,8 @@ import { HealthComponent } from './health/health.component';
     NewslettersComponent,
     WorldComponent,
     HealthComponent,
+    BusinessComponent,
+    ArtsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
