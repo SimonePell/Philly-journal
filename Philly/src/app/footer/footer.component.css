@@ -1,33 +1,114 @@
 .inq-footer {
   background: #f8f8f8;
-  border-top: 2px solid #e6e6e6;
-  margin-top: 3rem;
-  font-family: 'Arial', sans-serif;
-  font-size: 0.96rem;
-}
-.inq-footer-top {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.3rem 1rem 1rem 1rem;
-}
-.inq-footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  line-height: 2.1rem;
-}
-.inq-footer-links a {
-  color: #343338;
-  text-decoration: underline;
-  font-weight: 500;
-}
-.inq-footer-btm {
-  text-align: center;
-  color: #9b9fa2;
-  border-top: 1px solid #e6e6e6;
-  padding: 0.9rem 1rem;
+  font-family: Arial, sans-serif;
   font-size: 0.95rem;
 }
-.inq-footer-btm a {
-  color: #9b9fa2;
+
+.inq-footer-top {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 1rem;
+}
+
+.inq-footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: #343338;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.inq-footer-bottom {
+  border-top: 1px solid #e6e6e6;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.footer-bottom-row {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-links {
+  flex: 1 1 auto;
+}
+
+.legal-links a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive footer */
+@media screen and (max-width: 768px) {
+  .inq-footer-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-column {
+    margin-bottom: 2rem;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
 }

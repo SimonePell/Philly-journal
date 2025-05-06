@@ -7,7 +7,7 @@
 .section-header {
   border-top: 2px solid black;
   padding-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
 }
 
 .section-header h2 {
@@ -18,32 +18,29 @@
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 2rem;
+    gap: 0.7rem;
     align-items: start;
 }
 
 .articles-column {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.article-card {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #ddd;
-  align-items: center;
-}
-
-.article-text {
-  max-width: 60%;
+  gap: 1rem;
 }
 
 .article-text h3 {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.article-text .author {
+  font-size: 0.85rem;
+}
+
+
+.article-text {
+  flex: 1;
 }
 
 .article-text a {
@@ -51,14 +48,29 @@
   color: black;
 }
 
-.article-text .author {
+.article-text .subtitle {
   font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem; 
+  padding: 1rem 0;
+  
+}
+
+.articles-column .article-card:not(:last-child) {
+  border-bottom: 1px solid #ddd;
 }
 
 .article-card img {
-  width: 300px;
-  height: auto;
-  aspect-ratio: 3 / 2;
+  width: 240px;
+  height: 160px;
   object-fit: cover;
 }
 
@@ -74,4 +86,24 @@
 .sticky-ad img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .article-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-text {
+    max-width: 100%;
+  }
 }
