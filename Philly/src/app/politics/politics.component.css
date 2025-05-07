@@ -25,7 +25,6 @@
   .more-link {
     font-weight: bold;
     text-decoration: none;
-    background: url('/assets/rightArrow.svg') no-repeat right center;
     padding-right: 1.5rem;
     color: black;
   }

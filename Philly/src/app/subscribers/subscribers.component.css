@@ -20,7 +20,6 @@
   .section-header a {
     font-weight: bold;
     text-decoration: none;
-    background-image: url('/assets/rightArrow.svg');
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 1.5rem;

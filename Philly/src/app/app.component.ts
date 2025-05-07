@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
@@ -29,4 +31,18 @@ import { BusinessComponent } from './business/business.component';
 })
 export class AppComponent {
   title = 'philly';
+  
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+ngOnInit() {
+  if (isPlatformBrowser(this.platformId)) {
+    const link: HTMLLinkElement =
+      document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'assets/favicon-v2.ico';
+    document.head.appendChild(link);
+  }
+}
+
 }
