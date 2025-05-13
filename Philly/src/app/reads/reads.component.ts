@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-reads',
   imports: [],
   templateUrl: './reads.component.html',
-  styleUrl: './reads.component.css'
+  styleUrls: ['./reads.component.css'],
+  standalone: true,
 })
 export class ReadsComponent {
 

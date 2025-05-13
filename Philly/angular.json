@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/philly",
             "index": "src/index.html",
+            "baseHref": "/Philly-journal/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -30,12 +31,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -95,6 +91,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
