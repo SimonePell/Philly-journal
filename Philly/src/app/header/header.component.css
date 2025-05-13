@@ -31,6 +31,13 @@ html, body {
   gap: 1rem;
 }
 
+.app-bar.shrink .signin-btn,
+.app-bar.shrink .subscribe-btn {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.4rem;
+}
+
+
 /* Left, center, right blocks */
 .left-block,
 .header-logo,
@@ -40,6 +47,7 @@ html, body {
   align-items: center;
   justify-content: center;
   min-width: 0;
+  width: 33%;
 }
 
 .left-block {
@@ -184,15 +192,37 @@ html, body {
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .main-header {
-    gap: 0.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
-
-  .signin-btn, .subscribe-btn {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
+  
+  .left-block,
+  .header-logo,
+  .auth-section {
+    flex: 0 1 auto; /* Non forzare a occupare tutto */
+    min-width: 0;
   }
-
-  .app-bar.shrink .auth-section {
-    gap: 0.3rem;
+  
+  .header-logo {
+    justify-content: center;
+    flex: 1 1 auto;
+    max-width: 120px;
   }
+  
+  .auth-section {
+    flex: 0 1 auto;
+    white-space: nowrap;
+  }
+  
+  .subscribe-btn,
+  .signin-btn {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+    max-width: 100px;
+  }
+  
+  .header-logo img {
+    height: 40px;
+  }
+  
 }
