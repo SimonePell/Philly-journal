@@ -1,26 +1,32 @@
-import { Component, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [NgIf],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   isShrunk = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const scrollTop = window.scrollY;
-  
-    if (!this.isShrunk && scrollTop > 60) {
-      this.isShrunk = true;
-    } else if (this.isShrunk && scrollTop < 40) {
-      this.isShrunk = false;
-    }
-  
+  ngOnInit() {
+    this.updateShrinkState();
+  }
+
+  @HostListener('window:scroll')
+  @HostListener('window:resize')
+  onWindowEvent() {
+    this.updateShrinkState();
+  }
+
+  private updateShrinkState() {
+    const isMobile = window.innerWidth <= 768;
+    const isScrolled = window.scrollY > 60;
+
+    this.isShrunk = isMobile || isScrolled;
+
     const header = document.querySelector('.app-bar');
     if (header) {
       header.classList.toggle('shrink', this.isShrunk);

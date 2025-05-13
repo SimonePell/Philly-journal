@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-subscribers',
   imports: [],
   templateUrl: './subscribers.component.html',
-  styleUrl: './subscribers.component.css'
+  styleUrls: ['./subscribers.component.css'],
+  standalone: true,
 })
 export class SubscribersComponent {
 

@@ -34,15 +34,4 @@ export class AppComponent {
   
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-ngOnInit() {
-  if (isPlatformBrowser(this.platformId)) {
-    const link: HTMLLinkElement =
-      document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'assets/favicon-v2.ico';
-    document.head.appendChild(link);
-  }
-}
-
 }

@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-sports',
   imports: [],
   templateUrl: './sports.component.html',
-  styleUrl: './sports.component.css'
+  styleUrls: ['./sports.component.css'],
+  standalone: true,
 })
 export class SportsComponent {
 

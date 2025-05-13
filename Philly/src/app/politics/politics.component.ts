@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-politics',
   imports: [],
   templateUrl: './politics.component.html',
-  styleUrl: './politics.component.css'
+  styleUrls: ['./politics.component.css'],
+  standalone: true,
 })
 export class PoliticsComponent {
 

@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 2fr 1.5fr 1fr;
   gap: 2rem;
-  padding: 1rem 0;
+  padding: 2rem 1rem;
+  margin: auto;
 }
 
 /* LEFT COLUMN (Main story) */
